@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+</head>
+
+<style>
+    div{
+        border: 0px black shadow;
+    }
+    body{
+        margin-top: 0px;
+    }
+    #header{
+        width: 100%;
+    height: 300px;
+
+margin:auto;
+}
+    #navbar{
+width: 70%;
+height:20px;
+padding: 20px;
+margin-left: 2%;
+    }
+    #main{
+        display: flex;
+margin: auto;
+flex-direction: row;
+padding: 20px;
+    }
+    .card{
+box-sizing: border-box;
+width: 15% ;
+height: 540px;
+margin: 2px;
+margin: left 40px;
+  padding:15px ;
+  box-shadow:10px 10px 10px gray ;
+  border-radius:5px ;
+  text-align: center;
+  font-size:10px ;
+  font-family:Verdana ;
+  }
+  .card img{
+width: 100%;
+border: 6px solid gray;
+ }
+ #footer{
+width: 100%;
+height: 200px;
+padding: 10px;
+color: white;
+background: black;
+clear:both;
+ }
+ /* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width:600px)
+{
+    body{background:cyan}
+#main{flex-direction: column;
+text-align: center;}
+ .card{
+width: 95%;
+margin: 2px;
+    margin-bottom: 20px;
+    
+    
+    
+height: auto; }	
+
+}
+
+/* small devices (portrait tablets and large phones, 600px and up )*/
+
+@media only screen and (min-width:600px)
+{
+#main{flex-direction: column;}
+body{background:rgb(24, 186, 81)}
+}
+/* Medium devices (landscape tablets, 768px and up)*/
+@media only screen and (min-width:768px)
+{
+    body{background:rgb(222, 226, 131)}
+#header{background: green;
+height: 200px;}
+#main{flex-direction: row;
+flex-flow: row wrap;}
+ 
+}
+
+/* Large devices (laptops/desktops, 992px and up)*/
+@media only screen and (min-width:992px)
+{
+    body{background:rgb(121, 93, 204)}
+    #header{background: orange;
+        height: 300px;}
+        #main{flex-direction:row;}
+}
+
+</style>
+<body>
+
+    <div id="header"> <img src="images/p2.jpg"width='100%' height='300px'> </div>
+<div id="navbar">menu </div>
+    <div id="main">
+<!---    card     -->
+<div id="c1" class="card">
+<p>Product Name </p>
+<img src="images/a1.jpeg">
+<p>Black Coat <br/> <br/>
+price:8000<br/> <br/>
+<button>Add to Cart </button>
+</p>
+</div>
+
+
+<div id="c1" class="card">
+    <p>Product Name </p>
+    <img src="images/a2.jpeg">
+    <p>Kurta Pajama <br/> <br/>
+    price:5000<br/> <br/>
+    <button>Add to Cart </button>
+    </p>
+</div>
+  
+<div id="c1" class="card">
+        <p>Product Name </p>
+        <img src="images/a3.jpeg">
+        <p>Denim Jacket <br/> <br/>
+        price:3000<br/> <br/>
+        <button>Add to Cart </button>
+        </p>
+</div>
+
+<div id="c1" class="card">
+            <p>Product Name </p>
+            <img src="images/a4.jpeg">
+            <p>Formal <br/> <br/>
+            price:10000<br/> <br/>
+            <button>Add to Cart </button>
+            </p>
+            </div>
+
+           
+            <div id="c1" class="card">
+                <p>Product Name </p>
+                <img src="images/a5.jpeg">
+                <p>White Shirt <br/> <br/>
+                price:2000<br/> <br/>
+                <button>Add to Cart </button>
+
+</p>
+
+</div>
+ </div>
+ 
+
+    <div id="footer">Footer</div>
+    
+</body>
+</html>

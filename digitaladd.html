@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="show_add()">
+    <script>
+var box
+function show_add()
+{ box= document.createElement("div")
+document.body.appendChild(box)
+
+box.style = "width:300px; border:1px black solid; padding:20px; text-align:center; border-radius:20px;box-shadow:10px 10px 10px; position:absolute;left:40%"
+box.innerHTML = "<div style='text-align:right'><button onclick='closedilog()'> X </button></div>"
+    box.innerHTML += "<img src='images/add.jpg' width='100%' >"
+}
+
+function closedilog()
+{
+document.body.removeChild(box)
+
+}
+
+setTimeout("closedilog()","4000")
+
+document.titile= "Ready"
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
